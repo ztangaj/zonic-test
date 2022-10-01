@@ -1,11 +1,51 @@
 <?xml version="1.0" standalone="no"?>
 <mlt LC_NUMERIC="C" version="7.8.0" title="Shotcut version 22.06.23" producer="main_bin">
   <profile description="automatic" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="30000" frame_rate_den="1001" colorspace="709"/>
+  <producer id="producer0" in="00:00:00.000" out="03:59:59.993">
+    <property name="length">03:59:60.027</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/tongcheng/Documents/Adobe/Premiere Pro/15.0/Copied_zonic-1min-presen/git.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:hash">2702d18113c021584dc748d296d44ca8</property>
+    <property name="creation_time">2022-03-21T15:37:22</property>
+    <property name="xml">was here</property>
+  </producer>
+  <chain id="chain0" out="00:00:14.314">
+    <property name="length">00:00:14.348</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/tongcheng/Documents/Adobe/Premiere Pro/15.0/Copied_zonic-1min-presen/video_editing.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">b5002e8188e5c0c8974d1ac69bd994f2</property>
+  </chain>
+  <chain id="chain1" out="00:00:18.619">
+    <property name="length">00:00:18.652</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/tongcheng/Documents/Adobe/Premiere Pro/15.0/Copied_zonic-1min-presen/working.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">c36bf978cf98203f861fa11e278eb960</property>
+  </chain>
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:00:03.971"/>
+    <entry producer="chain0" in="00:00:00.000" out="00:00:14.314"/>
+    <entry producer="chain1" in="00:00:00.000" out="00:00:18.619"/>
   </playlist>
-  <producer id="black" in="00:00:00.000" out="00:00:25.292">
-    <property name="length">00:00:25.325</property>
+  <producer id="black" in="00:00:00.000" out="00:00:36.870">
+    <property name="length">00:00:36.904</property>
     <property name="eof">pause</property>
     <property name="resource">0</property>
     <property name="aspect_ratio">1</property>
@@ -14,9 +54,9 @@
     <property name="set.test_audio">0</property>
   </producer>
   <playlist id="background">
-    <entry producer="black" in="00:00:00.000" out="00:00:25.292"/>
+    <entry producer="black" in="00:00:00.000" out="00:00:36.870"/>
   </playlist>
-  <chain id="chain0" out="00:01:00.067">
+  <chain id="chain2" out="00:01:00.067">
     <property name="length">00:01:00.100</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/tongcheng/Library/CloudStorage/OneDrive-個人/IMG_9805.mp4</property>
@@ -35,17 +75,70 @@
       <property name="mlt_service">brightness</property>
     </filter>
   </chain>
+  <chain id="chain3" out="00:00:18.619">
+    <property name="length">00:00:18.652</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/tongcheng/Documents/Adobe/Premiere Pro/15.0/Copied_zonic-1min-presen/working.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="xml">was here</property>
+    <property name="shotcut:hash">c36bf978cf98203f861fa11e278eb960</property>
+    <property name="shotcut:caption">working.mp4</property>
+  </chain>
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V1</property>
-    <entry producer="chain0" in="00:00:00.000" out="00:00:25.292"/>
+    <entry producer="chain2" in="00:00:00.000" out="00:00:25.292"/>
+    <entry producer="chain3" in="00:00:07.074" out="00:00:18.619"/>
   </playlist>
-  <tractor id="tractor0" title="Shotcut version 22.06.23" in="00:00:00.000" out="00:00:25.292">
+  <producer id="producer1" in="00:00:00.000" out="03:59:59.993">
+    <property name="length">03:59:60.027</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/tongcheng/Documents/Adobe/Premiere Pro/15.0/Copied_zonic-1min-presen/git.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2022-03-21T15:37:22</property>
+    <property name="shotcut:caption">git.png</property>
+    <property name="shotcut:hash">2702d18113c021584dc748d296d44ca8</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+    <property name="force_aspect_ratio">1</property>
+    <property name="shotcut_aspect_num">1</property>
+    <property name="shotcut_aspect_den">1</property>
+    <filter id="filter1" out="00:00:03.971">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">113.675 278.974 390.77 390.77 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <blank length="00:00:01.535"/>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:03.971"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 22.06.23" in="00:00:00.000" out="00:00:36.870">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">0</property>
     <track producer="background"/>
     <track producer="playlist0"/>
+    <track producer="playlist1"/>
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -60,6 +153,21 @@
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="threads">0</property>
       <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
     </transition>
   </tractor>
 </mlt>
