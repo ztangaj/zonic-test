@@ -56,7 +56,7 @@
   <playlist id="background">
     <entry producer="black" in="00:00:00.000" out="00:00:36.870"/>
   </playlist>
-  <chain id="chain2" out="00:01:00.067">
+  <chain id="originchain" out="00:01:00.067">
     <property name="length">00:01:00.100</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/tongcheng/Library/CloudStorage/OneDrive-個人/IMG_9805.mp4</property>
@@ -91,7 +91,7 @@
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V1</property>
-    <entry producer="chain2" in="00:00:00.000" out="00:00:25.292"/>
+    <entry producer="originchain" in="00:00:00.000" out="00:00:25.292"/>
     <entry producer="chain3" in="00:00:07.074" out="00:00:18.619"/>
   </playlist>
   <producer id="producer1" in="00:00:00.000" out="03:59:59.993">
