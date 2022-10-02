@@ -40,7 +40,7 @@
     <property name="shotcut:name">V1</property>
     <entry producer="originchain" in="00:00:00.000" out="00:00:21.889"/>
   </playlist>
-  <tractor id="tractor0" title="Shotcut version 22.06.23" in="00:00:00.000" out="00:00:21.889">
+  <tractor id="tractor0" title="Shotcut version 22.06.23" in="00:00:00.000" out="00:00:36.870">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">0</property>
