@@ -1,8 +1,24 @@
 <?xml version="1.0" standalone="no"?>
 <mlt LC_NUMERIC="C" version="7.8.0" title="Shotcut version 22.06.23" producer="main_bin">
   <profile description="automatic" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="30000" frame_rate_den="1001" colorspace="709"/>
+  <producer id="2702d18113c021584dc748d296d44ca8" in="00:00:00.000" out="03:59:59.993">
+    <property name="length">03:59:60.027</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/tongcheng/Documents/Adobe/Premiere Pro/15.0/Copied_zonic-1min-presen/git.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2022-03-21T15:37:22</property>
+    <property name="shotcut:caption">git.png</property>
+    <property name="shotcut:hash">2702d18113c021584dc748d296d44ca8</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+  </producer>
   <playlist id="main_bin">
     <property name="xml_retain">1</property>
+    <entry producer="2702d18113c021584dc748d296d44ca8" in="00:00:00.000" out="00:00:03.971"/>
   </playlist>
   <producer id="black" in="00:00:00.000" out="03:59:60.027">
     <property name="length">03:59:60.027</property>
@@ -40,12 +56,34 @@
     <property name="shotcut:name">V1</property>
     <entry producer="f12ef6c2c775b7491208b32428158fa5" in="00:00:00.000" out="00:00:19.620"/>
   </playlist>
+  <producer id="producer1" in="00:00:00.000" out="03:59:59.993">
+    <property name="length">03:59:60.027</property>
+    <property name="eof">pause</property>
+    <property name="resource">/Users/tongcheng/Documents/Adobe/Premiere Pro/15.0/Copied_zonic-1min-presen/git.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2022-03-21T15:37:22</property>
+    <property name="shotcut:caption">git.png</property>
+    <property name="shotcut:hash">2702d18113c021584dc748d296d44ca8</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <blank length="00:00:25.659"/>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:03.971"/>
+  </playlist>
   <tractor id="tractor0" title="Shotcut version 22.06.23" in="00:00:00.000" out="03:59:60.027">
     <property name="shotcut">1</property>
     <property name="shotcut:projectAudioChannels">2</property>
     <property name="shotcut:projectFolder">0</property>
     <track producer="background"/>
     <track producer="playlist0"/>
+    <track producer="playlist1"/>
     <transition id="transition0">
       <property name="a_track">0</property>
       <property name="b_track">1</property>
@@ -60,6 +98,21 @@
       <property name="mlt_service">frei0r.cairoblend</property>
       <property name="threads">0</property>
       <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
     </transition>
   </tractor>
 </mlt>
