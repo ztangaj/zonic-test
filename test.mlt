@@ -16,7 +16,7 @@
   <playlist id="background">
     <entry producer="black" in="00:00:00.000" out="00:00:27.861"/>
   </playlist>
-  <chain id="chain0" out="00:01:00.067">
+  <chain id="f12ef6c2c775b7491208b32428158fa5" out="00:01:00.067">
     <property name="length">00:01:00.100</property>
     <property name="eof">pause</property>
     <property name="resource">/Users/tongcheng/Library/CloudStorage/OneDrive-個人/IMG_9805.mp4</property>
@@ -38,7 +38,7 @@
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V1</property>
-    <entry producer="chain0" in="00:00:00.000" out="00:00:27.861"/>
+    <entry producer="f12ef6c2c775b7491208b32428158fa5" in="00:00:00.000" out="00:00:27.861"/>
   </playlist>
   <tractor id="tractor0" title="Shotcut version 22.06.23" in="00:00:00.000" out="00:00:27.861">
     <property name="shotcut">1</property>
