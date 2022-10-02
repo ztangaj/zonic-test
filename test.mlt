@@ -29,7 +29,7 @@
     <property name="ignore_points">0</property>
     <property name="shotcut:caption">IMG_9805.mp4</property>
     <property name="xml">was here</property>
-    <filter id="filter0" out="00:00:27.861">
+    <filter id="filter0" out="00:00:19.620">
       <property name="start">1</property>
       <property name="level">2</property>
       <property name="mlt_service">brightness</property>
@@ -38,7 +38,7 @@
   <playlist id="playlist0">
     <property name="shotcut:video">1</property>
     <property name="shotcut:name">V1</property>
-    <entry producer="f12ef6c2c775b7491208b32428158fa5" in="00:00:00.000" out="00:00:27.861"/>
+    <entry producer="f12ef6c2c775b7491208b32428158fa5" in="00:00:00.000" out="00:00:19.620"/>
   </playlist>
   <tractor id="tractor0" title="Shotcut version 22.06.23" in="00:00:00.000" out="03:59:60.027">
     <property name="shotcut">1</property>
